@@ -1,0 +1,48 @@
+print("welcome")
+def  sum(num,num1,num2):
+
+     return  int(num+num1+num2)
+try:
+    no=int(input("enter your first number here: "))
+    op1=str(input("enter your operation: "))
+    no1=int(input("enter your second number here: "))
+    op2=str(input("enter the operation you want to perform: "))
+    no2=int(input("enter your third number here: "))
+    if op1=="+" and op2=="+":
+         print(int(no+no1+no2))
+    elif op1=="+" and op2=="-" :
+        print(int(no+no1-no2))
+    elif op1=="+"and op2=="/":
+        print(int(no+(no1/no2)))    
+    elif op1=="+"and op2=="*":
+        print(int(no+(no1*no2)))
+    elif op1=="-"and op2=="+":
+        print(int(no-no1+no2))
+    elif op1=="-"and op2=="/":
+        print(int(no-(no1/no2)))
+    elif op1=="-"and op2=="*":
+        print(int(no-(no1*no2)))
+    elif op1=="-"and op2=="-":
+        print(int(no-no1-no2))
+    elif op1=="/"and op2=="+":
+        print(int(no/no1+no2))
+    elif op1=="/"and op2=="-":
+        print(int(no/no1-no2))    
+    elif op1=="/"and op2=="/":
+        print(int(no/no1/no2))
+    elif op1=="/"and op2=="*":
+        print(int(no/no1*no2))  
+    elif op1=="*"and op2=="+":
+        print(int(no*no1+no2))
+    elif op1=="*"and op2=="-":
+        print(int(no*no1-no2))  
+    elif op1=="*"and op2=="/":
+        print(int(no*no1/no2))
+    elif op1=="*"and op2=="*":
+        print(int(no*no1*no2))                
+
+            
+except :
+      print("you entered a wrong value")
+
+print("success")
